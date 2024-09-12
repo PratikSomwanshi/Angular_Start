@@ -8,6 +8,7 @@ import { PropsComponent } from './props/props.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgifComponent } from './ngif/ngif.component';
     PropsComponent,
     ChildComponent,
     NgifComponent,
+    NgswitchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

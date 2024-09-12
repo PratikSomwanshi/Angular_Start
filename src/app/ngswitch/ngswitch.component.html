@@ -1,0 +1,10 @@
+<div>
+    <input type="number" [(ngModel)]="value">
+    <div [ngSwitch]="value">
+        <p *ngSwitchCase="0">Sunday</p>
+        <p *ngSwitchCase="1">Monday</p>
+        <p *ngSwitchCase="2">Tuesday</p>
+        <p *ngSwitchCase="3">Wendsday</p>
+        <p *ngSwitchDefault>Wrong input</p>
+    </div>
+</div>
