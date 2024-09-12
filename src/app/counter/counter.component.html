@@ -1,0 +1,9 @@
+<div>
+    <h2>Counter Component</h2>
+    <!--                string interpolation  -->
+    <p>Current count: {{ count }}</p>
+    <button (click)="inc()">Increment</button>
+    <!--       property binding   event binding         -->
+    <button [disabled]="disable" (click)="dec()">Decrement</button>
+    <button (click)="reset()">Reset</button>
+</div>
