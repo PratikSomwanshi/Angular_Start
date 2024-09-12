@@ -1,0 +1,19 @@
+<div>
+    <button (click)="toggle()">{{ show ? "hide" : "show"}}</button>
+    <!-- *ngIf will work as if for template -->
+    <!-- when show is false it will show rohan name template -->
+    <!-- when show is true it will show below div -->
+    <div *ngIf="show then rohan2 else rohan" class="model">
+        <h1>hand</h1>
+    </div>
+
+</div>
+
+<!-- ng template is not actual dom its a dummy one not reflected on actual dom  -->
+<ng-template #rohan>
+    <h1>rohan</h1>
+</ng-template>
+
+<ng-template #rohan2>
+    <h1>hero</h1>
+</ng-template>

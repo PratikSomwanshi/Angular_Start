@@ -7,6 +7,7 @@ import { CounterComponent } from './counter/counter.component';
 import { PropsComponent } from './props/props.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
+import { NgifComponent } from './ngif/ngif.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     CounterComponent,
     PropsComponent,
     ChildComponent,
+    NgifComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
