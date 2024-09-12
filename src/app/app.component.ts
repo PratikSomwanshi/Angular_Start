@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ChildComponent } from './child/child.component';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'john';
 
-  getData(name: string) {
-    this.name = name;
+  @ViewChild(ChildComponent) child!: ChildComponent;
+
+  getData() {
+    this.name = this.child.name;
   }
 }

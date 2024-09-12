@@ -6,5 +6,6 @@
   <!-- <app-props [name]="name"></app-props> -->
   <!--$ is a special character to showcase its a template string -->
   <h3>{{name}}</h3>
-  <app-child (rohan)="getData($event)"></app-child>
+  <button (click)="getData()">getData</button>
+  <app-child></app-child>
 </div>

@@ -8,9 +8,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ChildComponent {
   name = '';
 
-  @Output() rohan = new EventEmitter<string>();
+  // @Output() rohan = new EventEmitter<string>();
 
-  sendData() {
-    this.rohan.emit(this.name);
-  }
+  // sendData() {
+  //   this.rohan.emit(this.name);
+  // }
 }
