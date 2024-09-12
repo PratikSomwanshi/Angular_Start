@@ -1,7 +1,10 @@
 <div>
   <h1>App Component</h1>
   <!-- <app-counter></app-counter> -->
-  <app-props name="rohan"></app-props>
+  <!-- <app-props name="rohan"></app-props> -->
   <!-- name is property on app-props component and we can use dynamic field also to provide data -->
-  <app-props [name]="name"></app-props>
+  <!-- <app-props [name]="name"></app-props> -->
+  <!--$ is a special character to showcase its a template string -->
+  <h3>{{name}}</h3>
+  <app-child (rohan)="getData($event)"></app-child>
 </div>
