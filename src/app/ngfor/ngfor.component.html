@@ -1,0 +1,14 @@
+<div>
+    <h1>NgFor Component</h1>
+    <div *ngIf="users else rohan">
+        <div *ngFor="let x of users">
+            <p>{{x.name}}</p>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #rohan>
+    <h1>Else block</h1>
+    <p>No data found</p>
+</ng-template>
