@@ -1,0 +1,11 @@
+<div>
+    <div [ngStyle]="{'display' : 'block'}">
+        <!-- ngClass is Property Directive and it will show dark when show variable is true otherwise it will show light -->
+        <h1 [ngClass]="{
+            'dark': show,
+            'light': !show
+            }">
+            Color Block
+        </h1>
+    </div>
+</div>

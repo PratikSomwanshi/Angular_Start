@@ -9,6 +9,7 @@ import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { NgpropertyComponent } from './ngproperty/ngproperty.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
     ChildComponent,
     NgifComponent,
     NgswitchComponent,
+    NgpropertyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
