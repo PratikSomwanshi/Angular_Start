@@ -12,6 +12,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgpropertyComponent } from './ngproperty/ngproperty.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { RushPipe } from './rush.pipe';
+import { JokesComponent } from './jokes/jokes.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { RushPipe } from './rush.pipe';
     NgpropertyComponent,
     PipesComponent,
     RushPipe,
+    JokesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
