@@ -1,7 +1,23 @@
 <div>
-    <h1>jokes</h1>
-    <div *ngFor="let joke of ola">
-        <h1>{{joke.setup}}</h1>
-        <h2>{{joke.punchline}}</h2>
-    </div>
+    <h1>Jokes</h1>
+    <button (click)="getData()">Get Data</button>
+
+    <!-- Display loading message if loading -->
+    <ng-container *ngIf="loading; else showContent">
+        <h1>Loading...</h1>
+    </ng-container>
+
+    <!-- Show jokes if not loading and jokes are available -->
+    <ng-template #showContent>
+        <div *ngIf="!loading && ola.length > 0; else noJokes">
+            <div *ngFor="let joke of ola">
+                <h1>{{joke.setup}}</h1>
+                <h2>{{joke.punchline}}</h2>
+            </div>
+        </div>
+        <!-- Message to show when there are no jokes -->
+        <ng-template #noJokes>
+            <p>No jokes available. Click "Get Data" to fetch some!</p>
+        </ng-template>
+    </ng-template>
 </div>
