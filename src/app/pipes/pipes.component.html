@@ -1,0 +1,15 @@
+<div>
+    <!-- In Angular, pipes are a way to transform data in the view layer of application. Pipes are functions that take an input value and return a transformed output value. They are use format, filter, or manipulate data before it is displayed to the user. -->
+    <!-- 
+        command to generate pipes
+
+        ng generate pipes <pipe-name>
+     -->
+    <h1>{{price | currency}}</h1>
+    <h1>{{price | currency: "INR"}}</h1>
+    <h1>{{price | currency: "EUR"}}</h1>
+    <h1>{{dt | date}}</h1>
+    <h1>{{dt | date: "dd/MM/yy : hh/mm/ss"}}</h1>
+    <h1>{{obj | json}}</h1>
+    <h1>{{num | rush}}</h1>
+</div>

@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgpropertyComponent } from './ngproperty/ngproperty.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { RushPipe } from './rush.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NgpropertyComponent } from './ngproperty/ngproperty.component';
     NgifComponent,
     NgswitchComponent,
     NgpropertyComponent,
+    PipesComponent,
+    RushPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
