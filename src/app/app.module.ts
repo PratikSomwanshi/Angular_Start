@@ -14,6 +14,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { RushPipe } from './rush.pipe';
 import { JokesComponent } from './jokes/jokes.component';
 import { provideHttpClient } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,11 @@ import { provideHttpClient } from '@angular/common/http';
     PipesComponent,
     RushPipe,
     JokesComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideHttpClient()],
