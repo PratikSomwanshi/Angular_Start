@@ -5,6 +5,7 @@ import { JokesComponent } from './jokes/jokes.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'lifecycle',
+    component: LifecycleComponent,
   },
   {
     path: 'not-found',
