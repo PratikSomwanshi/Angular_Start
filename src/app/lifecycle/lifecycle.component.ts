@@ -1,5 +1,10 @@
 import { Component, Input, OnChanges, SimpleChange } from '@angular/core';
 
+interface User {
+  name: string;
+  age: number;
+}
+
 @Component({
   selector: 'app-lifecycle',
   templateUrl: './lifecycle.component.html',
@@ -15,6 +20,9 @@ import { Component, Input, OnChanges, SimpleChange } from '@angular/core';
 // OnDestroy
 export class LifecycleComponent {
   @Input() count = 0;
+  loading = false;
+
+  user: User[] = [];
 
   changeCount() {
     this.count++;
