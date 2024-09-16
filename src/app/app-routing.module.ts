@@ -4,9 +4,17 @@ import { HomeComponent } from './home/home.component';
 import { JokesComponent } from './jokes/jokes.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      { path: 'jokes', component: JokesComponent },
+      { path: 'about', component: AboutComponent },
+    ],
+  },
   {
     path: 'jokes',
     component: JokesComponent,
@@ -20,8 +28,13 @@ const routes: Routes = [
     component: ContactComponent,
   },
   {
+    path: 'not-found',
+    component: NotFoundComponent,
+  },
+  {
     path: '**',
-    redirectTo: '/home',
+    redirectTo: '/not-found',
+    // component: NotFoundComponent,
   },
 ];
 
