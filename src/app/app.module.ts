@@ -20,6 +20,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -40,8 +43,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ContactComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [provideHttpClient()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+  ],
+  providers: [provideHttpClient(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
